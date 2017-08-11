@@ -68,7 +68,7 @@ function initMap() {
 
 
   function makeMoreCalls(shelterId){  
-    var url = `http://api.petfinder.com/shelter.get?id=${shelterId}&key=a4d4d400939b10647da19b7593286b34&output=full&format=json`;
+    var url = `https://api.petfinder.com/shelter.get?id=${shelterId}&key=a4d4d400939b10647da19b7593286b34&output=full&format=json`;
     return $.ajax({
       type : 'GET',
       data : {},
