@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <title>First Capstone</title>
+    <meta charset="UTF-8">
+    <meta name='description' content='API for petfinder.com and googlemaps to help connect people to adoptable dogs in the United States'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <link rel="stylesheet" href="float.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+
+<body>
+    <main role="main">
+    <section id="top">
+    </section>
+        <div id="background">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="transbox">
+                        <div id="js-advanced-options">
+                            <ul class="nav">
+                                <li class="button-dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle">Advanced Search Options <div>▼</div></a>
+                                    <ul class="dropdown-menu">
+                                        <form>
+                                            <li>
+                                                <strong><li>Gender</strong>
+                                                <ul>
+                                                    <li>
+                                                        <input type="radio" value="M"  name="sex"> Male</li>
+                                                    </br>
+                                                    <li>
+                                                        <input type="radio" value="F"  name="sex"> Female</li>
+                                                    </br>
+                                                </ul>
+                                            </li>
+                                            </br><strong><li>Age</strong>
+                                            </br>
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" value="baby"  name="age">Baby</li>
+                                                </br>
+                                                <li>
+                                                    <input type="radio" value="young"  name="age">Young</li>
+                                                </br>
+                                                <li>
+                                                    <input type="radio" value="adult"  name="age">Adult</li>
+                                                </br>
+                                                <li>
+                                                    <input type="radio" value="senior"  name="age">Senior</li>
+                                                </br>
+                                            </ul>
+                                </li>
+                                </br><strong><li>Size</strong>
+                                </br>
+                                <ul>
+                                    <li>
+                                        <input type="radio" value="S"  name="size">Small</li>
+                                    </br>
+                                    <li>
+                                        <input type="radio" value="M"  name="size">Medium</li>
+                                    </br>
+                                    <li>
+                                        <input type="radio" value="L"  name="size">Large</li>
+                                    </br>
+                                </ul>
+                                </li>
+                                </br><strong><li>Animal Type</strong>
+                                </br>
+                                <ul>
+                                    <li>
+                                        <input type="radio" value="barnyard"  name="animal">Barnyard</li>
+                                    </br>
+                                    <li>
+                                        <input type="radio" value="dog"  name="animal">Dog</li>
+                                    </br>
+                                    <li>
+                                        <input type="radio" value="cat"  name="animal">Cat</li>
+                                    </br>
+                                     <li>
+                                        <input type="radio" value="bird"  name="animal">Bird</li>
+                                    </br>
+                                     <li>
+                                        <input type="radio" value="reptile"  name="animal">Reptile</li>
+                                    </br>
+                                     <li>
+                                        <input type="radio" value="horse"  name="animal">Horse</li>
+                                    </br>
+                                     <li>
+                                        <input type="radio" value="smallfurry"  name="animal">Small Furry</li>
+                                    </br>
+                                </ul>
+                                </li>
+                                </li>
+                                </li>
+                                
+                        </div>
+                        <div id="finder">
+                            <ul class="nav">
+
+                                <li class="button-dropdown">
+                                    <a href="javascript:void(0)" class="dropdown-toggle">
+                                 Menu <div>▼</div></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#map">
+                                Map</a>
+                                        </li>
+                                        <li>
+            <a href="https://secure.aspca.org/donate/ps-gn-p2?ms=MP_PMK_Googlebrand-T4&initialms=MP_PMK_Googlebrand-T4&pcode=WPSE9XXGOGN2PK00014&lpcode=WPSE9XXGOGN1PK00014&gclid=EAIaIQobChMIv6XK8Nyv1QIV1oKzCh17AwKbEAAYASAAEgKSKvD_BwE">Donate</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </div>
+                        <strong><h2>Connecting people to adoptable dogs in the United States</h2></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div id="map-border">
+        <h4>Click on the map to find adoptable dogs, and locate nearby shelters.</h4>
+        <div id="to-top">
+                <ul class="nav">
+                    <li class="button-dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle">
+                            <a href="#top">Back to Top</a>
+                                </li>
+                                    </ul></div>
+         
+        <section id="map">
+        <div class="row">
+        <div class="col-12">
+                    
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <section id="results">
+            <div id="dog-info-template"></div>
+        </section>
+            
+            <section id="dog-profile">
+
+            </section>
+        
+    </main>
+
+    <script src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3y6Bpz0bSh9WB45wBmaFEnlkogCoBklE&callback=initMap">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
